@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A little look into the projects created by a guy whos part designer, part engineer...a designineer, if you will.">
+<meta name="author" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--
+<link rel="shortcut icon" href="style/images/favicon.png">
+<link rel="shortcut icon" href="favicon-96x96.png">
+-->
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- -->
+<title>MikeStebbins</title>
+<!-- Bootstrap core CSS -->
+<link href="style/css/bootstrap.min.css" rel="stylesheet">
+<link href="style/css/plugins.css" rel="stylesheet">
+<link href="style/css/prettify.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link href="style/css/color/blue.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+<link href="style/type/fontello.css" rel="stylesheet">
+<link href="style/type/budicons.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="style/js/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body class="full-layout">
+<div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+<div class="body-wrapper">
+  <nav class="navbar navbar-default" role="navigation">
+    <!--
+    <div class="navbar-header"> <a class="btn responsive-menu" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
+      <div class="navbar-brand text-center"> <a href="index.html"><img src="style/images/logo.png" alt="" data-src="style/images/logo.png" data-ret="style/images/logo@2x.png" class="retina" /></a> </div>
+      /.navbar-brand
+    </div>
+    -->
+    <!-- 
+    /.navbar-header -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="current"><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!--
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="elements.html">Elements</a></li>
+        --> 
+        <li><a href="#elsewhere" class="fancybox-inline" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-heart-1"></i><span>Elsewhere</span></a></li>
+      </ul>
+      <!-- /.navbar-nav --> 
+    </div>
+    <!-- /.navbar-collapse -->
+    <div id="elsewhere" style="display:none;">
+      <h1>Me, Elsewhere</h1>
+      <div class="divide20"></div>
+      <ul class="social">
+        <li><a href = "mailto:mikestebbins.meATgmailDOTcom" 
+            onclick = "this.href=this.href
+              .replace(/AT/,'&#64;')
+              .replace(/DOT/,'&#46;')"
+          ><i class="icon-mail"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/michael-stebbins-54502021"><i class="icon-s-linkedin"></i></a></li>        
+        <li><a href="https://twitter.com/wentsideways"><i class="icon-s-twitter"></i></a></li>
+        <li><a href="https://github.com/mikestebbins"><i class="icon-s-github"></i></a></li>
+      </ul>
+    </div>
+    <!-- /#elsewhere --> 
+  </nav>
+  <!-- /.navbar -->
+  
+  <section id="home" class="naked">
+    <div class="fullscreenbanner-container revolution">
+      <div class="fullscreenbanner">
+        <ul>
+          <li data-transition="fade"> <img src="style/images/dummy.png"  alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="repeat">
+            <h1 class="tp-caption caption large sfb" data-x="center" data-y="center" data-voffset="-25" data-speed="900" data-start="1000" data-endspeed="100" data-easing="Sine.easeOut">Hello! I'm Mike Stebbins</h1>
+            <div class="tp-caption small tp-fade fadeout tp-resizeme" data-x="center" data-y="center" data-voffset="25" data-speed="100"
+			data-start="1500"
+			data-easing="Power4.easeOut"
+			data-splitin="chars"
+			data-splitout="chars"
+			data-elementdelay="0.03"
+			data-endelementdelay="0"
+			data-endspeed="100"
+			data-endeasing="Power1.easeOut"
+			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">engineer, designer, mechatronics builder, creative coder</div>
+            <div class="arrow smooth"><a href="#portfolio"><i class="icon-down-open-big"></i></a></div>
+          </li>
+        </ul>
+        <div class="tp-bannertimer"></div>
+      </div>
+      <!-- /.fullscreenbanner --> 
+    </div>
+    <!-- /.revolution --> 
+  </section>
+  <!-- /#home -->
+  
+  <div class="container">
+    <section id="portfolio" class="portfolio">
+      <div class="box">
+        <h2 class="section-title pull-left">From My Portfolio</h2>
+        <div id="filters-container" class="cbp-l-filters-alignRight pull-right">
+          <div data-filter="*" class="cbp-filter-item-custom-active cbp-filter-item-custom btn">All</div>
+          <!--
+          <div data-filter=".architecture" class="cbp-filter-item-custom btn">Architecture</div>
+          <div data-filter=".macro" class="cbp-filter-item-custom btn">Macro</div>
+          <div data-filter=".portrait" class="cbp-filter-item-custom btn">Portrait</div>
+          <div data-filter=".still-life" class="cbp-filter-item-custom btn">Still Life</div>
+          -->
+          <div data-filter=".work" class="cbp-filter-item-custom btn">work</div>
+          <div data-filter=".school" class="cbp-filter-item-custom btn">school</div>
+          <div data-filter=".personal" class="cbp-filter-item-custom btn">personal</div>
+        </div>
+        <!-- /#filters-container -->
+        <div class="clearfix"></div>
+        <div id="grid-container" class="cbp-l-grid-masonry">
+          <ul>
+            <li class="cbp-item frame work"> <a class="cbp-caption cbp-singlePage" href="ajax/teague.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p1_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">What I'm Currently up to</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame personal"> <a class="cbp-caption cbp-singlePage" href="ajax/openaps.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p2_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">OpenAPS: a DIY Artificial Pancreas</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame work"> <a class="cbp-caption cbp-singlePage" href="ajax/optimization.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p3_001.gif" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Topology Structural Optimization</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame school"> <a class="cbp-caption cbp-singlePage" href="ajax/hypstr.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p5_001.gif" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Master's Thesis: Human Foot Materials Testing Robot</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame work"> <a class="cbp-caption cbp-singlePage" href="ajax/uav.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p4_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">High Endurance, Single-Man Portable UAV</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame work"> <a class="cbp-caption cbp-singlePage" href="ajax/haptics.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p8_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Experiments with Haptics</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame work"> <a class="cbp-caption cbp-singlePage" href="ajax/reardar.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p7_001.gif" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Reardar: Radar for Cyclists</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame personal"> <a class="cbp-caption cbp-singlePage" href="ajax/3dprinter.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p6_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Homemade 3D Printer</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame personal"> <a class="cbp-caption cbp-singlePage"  href="ajax/espressopid.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p9_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Espresso Machine PID Temperature Controller</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame school"> <a class="cbp-caption cbp-singlePage"  href="ajax/bonescaffold.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p10_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">3D Printed Bone Tissue Scaffolding</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame personal"> <a class="cbp-caption cbp-singlePage"  href="ajax/worldtrip.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p11_001.gif" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Round-the-World Trip</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame personal"> <a class="cbp-caption cbp-singlePage"  href="ajax/qlone.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p12_001.gif" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Qlone Word Clock</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame work"> <a class="cbp-caption cbp-singlePage"  href="ajax/AR-VR-MR.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p14_001.gif" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Augmented / Mixed / Virtual Reality</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame personal"> <a class="cbp-caption cbp-singlePage"  href="ajax/overheadrig.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p15_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Overhead Timelapse Rig</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>
+            <li class="cbp-item frame personal"> <a class="cbp-caption cbp-singlePage"  href="ajax/publications.html">
+              <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p13_001.jpg" alt=""> </div>
+              <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="cbp-l-caption-title">Publications</div>
+                  </div>
+                </div>
+              </div>
+              </a> 
+            </li>            
+          </ul>
+        </div>
+        <!-- /.cbp-l-grid-masonry -->
+        <!--
+        <div class="cbp-l-loadMore-button"> <a href="ajax/port1-more.html" class="cbp-l-loadMore-button-link btn">LOAD MORE</a> </div>
+        </div>
+        -->
+      <!-- /.box --> 
+    </section>
+    <!-- /#portfolio -->
+    
+    <section id="about">
+      <div class="box">
+        <h2 class="section-title">Who Am I?</h2>
+        <div class="row">
+	      <div class="col-md-5 col-md-push-7 col-sm-12">
+            <figure class="frame"><img src="style/images/art/about_440.jpg" alt="" /></figure>
+          </div>
+          <!-- /column -->
+          <div class="col-md-7 col-md-pull-5 col-sm-12">
+          <br>
+            <p class="lead">When I was 11, I read <a target="_blank" href="https://en.wikipedia.org/wiki/The_Way_Things_Work">THE WAY THINGS WORK</a> cover-to-cover...and I haven't stopped geeking out about how things work since.
+            </p>
+            <br>
+            <p>Imagining something new and then doing whatever I need to bring it to life is what gets me out of bed in the morning. I'll learn whatever it takes, stretch my comfort zone, and work tirelessly to make it real.
+            </p>
+            <!-- <br>            -->
+            <p>I have built an extensive set of skills from my time in commercial aerospace, robotics, drones and a product design consultancy; from mechanisms to mechatronics, structures to software, prototypes to technical presentations. Currently, I am solving tough technology problems for our clients at TEAGUE.
+            </p>
+            <!-- <br>           -->
+            <p>When I'm not making things, I can be found riding bikes, drinking coffee, soaking up the Pacific Northwest outdoors, and trying (generally unsuccessfully) to keep up with my kids.</p>
+            <br>          
+            <p>Thanks for stopping by!
+            </p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->        
+      </div>
+      <!-- /.box --> 
+    </section>
+    <!-- /#about --> 
+    <section id="contact">
+      <div class="box">
+        <div class="form-container">
+          <div class="response alert alert-success"></div>
+        <h2 class="section-title">Get in Touch with Me</h2>
+        <p>Drop me a line to discuss design, bikes, homemade medical devices, or other fun things.
+        </p>
+          <form id="contactform" method="POST">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-row text-input-row name-field">
+                <label>Name</label>
+                  <input type="text" name="name">
+              </div>
+              <div class="form-row text-input-row email-field">
+                <label>Email</label>
+                  <input type="email" name="_replyto">
+              </div>
+              <div class="form-row text-input-row subject-field">
+                <label>Subject</label>
+                  <input type="text" name="subject" class="text-input defaultText"/>
+              </div>
+            </div>
+            <div class="col-sm-6 lp5">
+              <div class="form-row text-area-row">
+                <label>Message</label>
+                  <textarea name="message"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="button-row pull-right">
+                <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0"/>
+              </div>
+            </div>
+            <div class="col-sm-6 lp5">
+              <div class="button-row pull-left">
+                <input type="reset" value="Clear Message" name="reset" class="btn btn-submit bm0" />
+              </div>
+          </div>
+            <!-- <input type="hidden" name="_next" value="ajax/thankyou.html" /> -->
+            <input type="hidden" name="_subject" value="Website" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="v_error" id="v-error" value="Required" />
+            <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
+          </form>
+          <script>
+            var contactform =  document.getElementById('contactform');
+            contactform.setAttribute('action', '//formspree.io/' + 'michael' + '.jay.' + 'stebbins' + '@' + 'gmail' + '.' + 'com');
+          </script>
+        </div>
+        <!-- /.box --> 
+      </div>
+      <!-- /.formcontainer -->
+    </section>
+    <!-- /#contact -->  
+    <br>
+    <footer class="footer box">
+      <p class="pull-left">© 2016 Mike Stebbins. Theme by elemis.</p>
+      <ul class="social pull-right">
+        <li><a href = "mailto:mikestebbins.meATgmailDOTcom" 
+            onclick = "this.href=this.href
+              .replace(/AT/,'&#64;')
+              .replace(/DOT/,'&#46;')"
+          ><i class="icon-mail"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/michael-stebbins-54502021"><i class="icon-s-linkedin"></i></a></li>        
+        <li><a href="https://twitter.com/wentsideways"><i class="icon-s-twitter"></i></a></li>
+        <li><a href="https://github.com/mikestebbins"><i class="icon-s-github"></i></a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </footer>
+    <!-- /footer --> 
+    
+  </div>
+  <!-- /.container --> 
+</div>
+<!-- /.body-wrapper --> 
+<script src="style/js/jquery.min.js"></script> 
+<script src="style/js/bootstrap.min.js"></script> 
+<script src="style/js/jquery.themepunch.tools.min.js"></script> 
+<script src="style/js/classie.js"></script> 
+<script src="style/js/plugins.js"></script> 
+<script src="style/js/scripts.js"></script> 
+<script>
+  $.backstretch(["style/images/art/bg6a.jpg"]);
+</script>
+</body>
+</html>

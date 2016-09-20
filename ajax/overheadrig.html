@@ -1,0 +1,66 @@
+<div class="swiper-wrapper"> <a class="arrow-left" href="#"></a> <a class="arrow-right" href="#"></a>
+  <div class="swiper-container gallery">
+    <div class="swiper">
+      <div class="item"> 
+        <iframe src="https://player.vimeo.com/video/181746413?autoplay=1&loop=1&portrait=0" width="978" height="550" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <!-- /.item -->      
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/overhead_010.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/overhead_011.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/overhead_012.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/overhead_013.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+    </div>
+    <!-- /.swiper -->
+  </div>
+  <!-- /.swiper-container -->
+</div>
+<!-- /.swiper-wrapper -->
+
+<div class="container inner">
+  <div class="box">
+	  
+    <h1 class="post-title">Overhead Timelapse Rig</h1>
+    <p>My friend Jeff Skierka (designer behind the <a target="_blank" href="http://makezine.com/2012/05/25/mixtape-coffee-table/">Mixtape Table</a>) wanted to film timelapse videos of projects being built on his work-bench from overhead, while circling around the bench. I thought about it for a bit, came up with the stepper motor/bike wheel drive idea, and told him to start building that. Meanwhile, I threw together the circuitry for an adjustable-speed, stepper-motor-drive system with a homing feature and a pause switch (to allow for multi-day, multi-start films ) and a DIY intervalometer to capture photos from his SLR. We were happy with the results, given the short amount of time put into it.
+    </p>
+    <a target="_blank" href="https://github.com/mikestebbins/OverheadCameraGantryRig">GITHUB LINK</a>
+  </div>
+  <!-- /.box -->
+</div>
+<!-- /.container -->
+
+<!-- INSERT PAGE SCRIPTS HERE -->
+<script type="text/javascript">
+	$('.swiper-container.gallery').each(function(){
+		  $(this).swiper({
+		     grabCursor: true,
+		    slidesPerView: 'auto',
+		    wrapperClass: 'swiper',
+		    slideClass: 'item',
+		    offsetPxBefore: 0,
+		     offsetPxAfter: 0
+		  });
+		
+		  var $swipers = $(this);
+		
+		  $swipers.siblings('.arrow-left').click(function(){
+		$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex-1);
+		return false;
+		});
+		$swipers.siblings('.arrow-right').click(function(){
+		$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex+1);
+		return false;
+		});
+	});
+</script>

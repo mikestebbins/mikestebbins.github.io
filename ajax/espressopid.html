@@ -1,0 +1,73 @@
+<div class="swiper-wrapper"> <a class="arrow-left" href="#"></a> <a class="arrow-right" href="#"></a>
+  <div class="swiper-container gallery">
+    <div class="swiper">
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/espressopid_010.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/espressopid_011.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/espressopid_012.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/espressopid_013.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/espressopid_014.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+    </div>
+    <!-- /.swiper -->
+  </div>
+  <!-- /.swiper-container -->
+</div>
+<!-- /.swiper-wrapper -->
+
+<div class="container inner">
+  <div class="box">
+	  
+    <h1 class="post-title">Espresso Machine PID Temperature Controller</h1>
+    <p>A precise, accurate espresso machine temperature is an essential part of the journey towards espresso enlightenment, also known as <a target="_blank" href="https://espressocoffee.quora.com/Extracting-the-god-shot-perfect-espresso-coffee">"the God-Shot"</a>.  To that end, I replaced the wildly-imprecise thermostat in my machine with a thermocouple and a PID (<a target="_blank" href="https://en.wikipedia.org/wiki/PID_controller">Proportional Integral Derivative</a>) temperature controller.</p>
+    <!-- -->
+    <p>This was my first electronics project many years ago, as you can maybe tell by the fire extinguisher in the frame, but I didn't burn down our house and it still pulls "God Shots" frequently!</p>
+    <!--
+    <div class="divide10"></div>
+    <a href="#" class="btn">More Info</a> 
+     -->
+  </div>
+  <!-- /.box -->
+</div>
+<!-- /.container -->
+
+
+
+
+<!-- INSERT PAGE SCRIPTS HERE -->
+<script type="text/javascript">
+	$('.swiper-container.gallery').each(function(){
+		  $(this).swiper({
+		     grabCursor: true,
+		    slidesPerView: 'auto',
+		    wrapperClass: 'swiper',
+		    slideClass: 'item',
+		    offsetPxBefore: 0,
+		     offsetPxAfter: 0
+		  });
+		
+		  var $swipers = $(this);
+		
+		  $swipers.siblings('.arrow-left').click(function(){
+		$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex-1);
+		return false;
+		});
+		$swipers.siblings('.arrow-right').click(function(){
+		$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex+1);
+		return false;
+		});
+	});
+</script>

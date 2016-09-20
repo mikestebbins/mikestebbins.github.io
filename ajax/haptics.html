@@ -1,0 +1,106 @@
+<div class="container inner tp0">
+  <div class="box">
+    <h1 class="post-title text-left">Experiments with Haptics</h1>   
+    <!-- <div class="divide50"></div> -->
+    <ul class="basic-gallery text-center">
+      <!-- <li> -->
+      <div class="row">
+        <div class="col-sm-6">
+          <figure class="frame"><img src="style/images/art/haptics_009.jpg" alt="" /> </figure>
+          <p class="text-left"><a target="_blank" href="https://github.com/mikestebbins/HapticHelper">GITHUB LINK</a>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <figure class="frame"><img src="style/images/art/haptics_008.jpg" alt="" /> </figure>
+          <p class="text-left"><a target="_blank" href="https://github.com/mikestebbins/RoombaWheelForceFeedback">GITHUB LINK</a>
+          </p>
+        </div>
+      </div>
+      <!-- </li> -->
+      <!-- <li> -->
+	    <p class="text-left">I have always been intrigued by all of the different means there are to communicate information. An especially interesting means is Haptics, or the conveyance of information via the sense of touch. To that end, I've spent time in my current position investigating the physiological underpinnings of haptics, various types of haptic interactions, tools to study them, and the experiences they might help to create.
+      </p>
+      <!-- </li> -->
+      <li>
+      <figure class="frame"><img src="style/images/art/haptics_010.jpg" alt="" />
+      </figure>
+      </li>
+      <li>
+      <p class="text-left">The sense of touch developed very early in the human story and encompasses a large part of our brain's sensing horsepower (see the Cortical Homunculus image above, which shows proportionally how the brain processes touch information from across the body). As such, it can be a very fast way to transmit information. It takes about 200 milliseconds for the brain to see and comprehend information from a visual input. Conveying information via haptics, on the other hand, can skip the brain almost entirely and use 'muscle memory' to pass on information, the same way that you can type on a keyboard or ride a bike with essentially no thought.
+      </p>
+      </li>
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_011.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_012.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <p class="text-left">So, how does the sense of touch work? The answer is mechanoreceptors. There are different types of mechanoreceptors with different capabilities in different densities all over the body. Three different types of mechanoreceptors in the fingertips each detect a different frequency of vibration.          
+        </p>
+      </li> 
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_013.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_014.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <p class="text-left">Moving our fingertips, which are covered in little ridges (that also happen to define our fingerprints), across a surface of some kind excites vibrations in the different mechanoreceptors. The amplitudes of vibration received in the different receptors creates a certain "signature" that the brain can identify as an earbud or a strawberry. (by the way, the frequency plots above are fabricated by me and definitely not accurate!)   
+        </p>
+      </li>      
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_015.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <p class="text-left">There are several types of haptic interfaces common in different modern electronics. The first, shown above, is the Eccentric Rotating Mass, or ERM. ERMs are as simple as a DC motor with an eccentric mass on the shaft. Rotating the motor creates a cyclic motion perpendicular to the axis of rotation of the motor. ERMs were popularized in the Nintendo rumble-packs and cell phones older than the iPhone 6. ERMs are simple to control, as they don't require a specialized Integrated Circuit (IC) to control them. But, since ERMs require a large mass to produce a large vibration, they are fairly imprecise as they are slow to get up to speed and slow to stop. As such, the tactile stimulation feels fuzzy, not sharp.
+        </p>
+      </li> 
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_016.jpg" alt="" /></figure>
+      </li>
+<!--       <li>
+        <figure class="frame"><img src="style/images/art/haptics_030.gif" alt="" /></figure>
+      </li> -->
+      <li>
+        <p class="text-left">The next is the Linear Resonant Actuator, or LRA. LRAs operate on the same principles as a tuned mass-spring-damper. Electromagnets quickly bring the mass on a spring up to a resonant vibration, and can just as quickly stop the moving mass. They have been used in smartphones since the iPhone 6, and in some wearables. They are much more precise than an ERM, due to the ability to rapidly change their momentum, but they require tuning to optimize their performance and an IC to utilize them effectively. They enable many different tactile sensations, like a gradually increasing force or a sharp double-click.
+        </p>
+      </li>
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_017.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <p class="text-left">The last device to discuss is Apple's Force Touch. This is simply a series of electromagnets (see the wrapped wire) acting above a ferromagnetic bar. Applying an AC voltage to the electromagnets pushes them away from the bar, causing a physical "thump" sensation on the fingers above it.
+        </p>
+      </li> 
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_018.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <p class="text-left">I had a project at work where I was responsible for delivering a touch-point mechanism prototype with a tunable haptic/tactile feel. After delivering the mechanism, I started investigating the idea of using electronics to simulate force feedback instead of complicated, tough to tune mechanisms. My first iteration, shown above, was able to (roughly) simulate a rotating knob with 'click'-detents or a resistance to rotation that increased as the knob was rotated. The graph shows the three different responses programmed in (knob angular position vs. torque applied).
+        </p>
+        <p class="text-left">This prototype was quickly assembled with materials on hand. The knob was 3d-printed and attached to a Roomba drive wheel. I used an Arduino to read the optical position sensor of the Roomba wheel, calculate a torque based on one of the response algorithms, and them send a PWM signal to the motor drive MOSFET on the harvested Roomba motherboard. This prototype was crude, but an interesting step into programmable tactile feel.
+        </p>
+      </li> 
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_019.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <p class="text-left">A separate haptic project, shown above, was a means to feel the 123 separate haptic effects possible in the <a target="_blank" href="https://cdn-shop.adafruit.com/datasheets/drv2605L.pdf">DRV2605L Haptic Motor Controller IC</a> from Texas Instruments. The goal was to make it easy to pick different effects when designing projects with a tactile user-interaction component.
+        </p>
+        <p class="text-left">I wrote an Android app to connect to a Bluetooth module attached to a Teensy microcontroller that controlled the haptic driver. Different ERM and LRA motors were able to be wired in, and the 123 different effects could be chosen and experienced. 
+        </p>
+      </li> 
+      <li>
+        <figure class="frame"><img src="style/images/art/haptics_020.jpg" alt="" /></figure>
+      </li>
+      <li>
+        <p class="text-left">I've just begun to experiment with an open-source board graciously developed by <a target="_blank" href="http://nytlabs.com/blog/2015/11/18/lever/">Noah Feehan</a> that attempts to replicate the tech used in <a target="_blank" href="http://www.olivierbau.com/revel.php">Disney Research's REVEL board</a>. The REVEL board uses a high-voltage, low-current AC signal passing through the user's body to create a time-varying attraction between the finger and the object it is touching. When the finger is moved across the object, this varying attraction causes a variable friction force, which makes the object feel as though it was made of different materials/textures. Low friction might feel like glass, while a smooth sinusoidal-shaped friction might feel like ridges, while a random signal with sharp edges might feel like sandpaper. I haven't gotten this working yet, but am looking forward to experiencing this innovative technology!
+        </p>
+      </li> 
+    </ul>
+    <!-- /.basic-gallery -->
+  </div>
+  <!-- /.box -->
+</div>
+<!-- /.container -->

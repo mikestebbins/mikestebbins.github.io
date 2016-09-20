@@ -1,0 +1,112 @@
+<div class="swiper-wrapper"> <a class="arrow-left" href="#"></a> <a class="arrow-right" href="#"></a>
+  <div class="swiper-container gallery">
+    <div class="swiper">
+      <div class="item"> 
+        <iframe src="https://player.vimeo.com/video/178950449?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="969" height="550" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>  
+        </iframe>
+      </div>
+      <!-- /.item -->      
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_010.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_011.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_012.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_013.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_014.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <iframe src="https://player.vimeo.com/video/178950403?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="969" height="550" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_020.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_021.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_030.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_031.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_041.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_045.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_043.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+      <div class="item">
+        <figure class="frame"><img src="style/images/art/3dprinter_044.jpg" alt="" /></figure>
+      </div>
+      <!-- /.item -->
+    </div>
+    <!-- /.swiper -->
+  </div>
+  <!-- /.swiper-container -->
+</div>
+<!-- /.swiper-wrapper -->
+
+<div class="container inner">
+  <div class="box">
+	  
+    <h1 class="post-title">Homemade 3D Printer</h1>
+    <p>In the spring of 2013, I finished a project that had been on and off-the-burner for about 2 years; a RepRap FDM 3D printer built from scratch. The printer features Clonedel (cast-urethane plastic) junction pieces, hand-cut frame and linear slide rods, linear bearings, a Bowden extruder, a J-Head hot-end, and an ABS/PLA-capable heated build-plate. It is controlled wirelessly via a Raspberry Pi single-board computer running the OctoPi print server, allowing me to kick off and monitor prints from any room in the house!</p>
+    <!--
+    <div class="divide10"></div>
+    <a href="#" class="btn">More Info</a> 
+     -->
+  </div>
+  <!-- /.box -->
+</div>
+<!-- /.container -->
+
+
+
+
+<!-- INSERT PAGE SCRIPTS HERE -->
+<script type="text/javascript">
+	$('.swiper-container.gallery').each(function(){
+		  $(this).swiper({
+		     grabCursor: true,
+		    slidesPerView: 'auto',
+		    wrapperClass: 'swiper',
+		    slideClass: 'item',
+		    offsetPxBefore: 0,
+		     offsetPxAfter: 0
+		  });
+		
+		  var $swipers = $(this);
+		
+		  $swipers.siblings('.arrow-left').click(function(){
+		$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex-1);
+		return false;
+		});
+		$swipers.siblings('.arrow-right').click(function(){
+		$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex+1);
+		return false;
+		});
+	});
+</script>
