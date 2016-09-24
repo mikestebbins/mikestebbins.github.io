@@ -18,31 +18,13 @@
   <!-- /.box -->
 </div>
 <!-- /.container -->
-<!-- from (http://stackoverflow.com/questions/26649641/muting-an-embedded-vimeo-video), to set the volume to zero on this video-->
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 <script>
-$(function() {
-    var vimeo_iframe = $('#vimeo_player')[0];
-    var player = $f(vimeo_iframe);
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    player.addEvent('ready', function() {
-        player.api('setVolume', 0);
-    });
-});
-</script> -->
-<!--Include the Vimeo API Library-->
-<!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
-<!--Select and manipulate your video-->
-<!-- <script type="text/javascript">
-    //Select the #embeddedVideo element
-    var video = document.getElementById('embeddedVideo');
+  ga('create', 'UA-84644192-1', 'auto');
+  ga('send', 'pageview');
 
-    //Create a new Vimeo.Player object
-    var player = new Vimeo.Player(video);
-
-    //When the player is ready, set the volume to 0
-    player.ready().then(function() {
-        player.setVolume(0);
-    });
-</script> -->
+</script>
