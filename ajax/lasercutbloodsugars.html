@@ -1,7 +1,7 @@
 <div class="container inner tp0">
   <div class="box">
     <h1 class="post-title text-left">A Year's Worth of Bloodsugars in Tangible Form</h1>   
-      <p class="text-left">I am what you might call a "lucky" Type 1 diabetic, in that I have access to Continuous Glucose Monitoring (CGM), and amazing technology that is unaffordable to many diabetics around the world. A CGM uses a small probe inserted under the skin (on the backside of my arm) to measure my blood glucose value every 5 minutes and send it to my phone. This wealth of data is something that I review and act on, if necessary, at least a few times every waking hour. My <a href=" https://mstebbins.com/#cbp=ajax/openaps.html" target="_blank">artificial pancreas</a> uses these data every 5 minutes to make adjustments to keep my "bloodsugar" within my set range.
+      <p class="text-left">I consider myself lucky to be a type 1 diabetic who has access to a Continuous Glucose Monitor (CGM), an amazing piece of technology that is unfortunately not available to all. A CGM uses a small probe inserted under the skin (mine is on the backside of my arm) to measure my blood glucose level every 5 minutes and transmit it to my phone. This wealth of data is something that I review and act on, if necessary, at least several times every waking hour...as I have since getting my first CGM in 2010. My <a href=" https://mstebbins.com/#cbp=ajax/openaps.html" target="_blank">artificial pancreas</a> uses these data every 5 minutes to adjust my insulin to try and keep my blood sugar within a set range.
       </p>
       <div class="divide50"></div>   
       <ul class="basic-gallery text-center">
@@ -11,7 +11,10 @@
       </li>
     </ul>
     <p> </p>
-      <p class="text-left">I'm not sure if those without diabetes can really understand it, but I feel strangely close to this pile of data. Afterall, the values represent the outcome of or the possibility for me to do most of the things that make up "life"; what I eat, how I slept, when/how much/what kind of exercise I've gotten, stress, mental health, and sickness, to name a few. The importance of these data, combined with my affinity for novel data visualization methods, made we want to create a tangible representation. <br><br> Each piece of laser-cut cardstock represents one day, with the start and end times of the day and the beginning and end of the year engraved in the acrylic. In total, there are 96,352 blood glucose values included in this display measuring 5.8" x 4.5". <br><br>Perhaps you are wondering why I just finished a project in 2025 using data from 2019? This project started in 2020 (a Covid project). At that time, I pulled all the data from the MongoDB it lives in, parsed it into individual days, and began to use svgwrite (Python library) to build SVG files. I ended up stuck somewhere there and lost interest. Earlier this year (2025), I realized that I wanted to finish the project, so I sat down for a few afternoons and made it work. Laser-cutting the cardstock (16 individual sheets) in our laser cutter at work took about 3 hours, and another couple of evenings to cut the acrylic and assemble.
+      <p class="text-left">I'm not sure if those without diabetes can really understand it, but I feel strangely close to these data. After all, they represent the outcome of most of the things that I do day to day, and dictate if and when I can do other things; what I eat, how I slept, when/how much/what kind of exercise I've gotten or can get, stress, mental health, and sickness, are some of the things that drive my blood sugar values. The importance of these data, combined with my love of interesting data visualization methods, made me want to create a tangible representation of the data.
+	      <br><br> Each piece of laser-cut cardstock represents one day in 2019. There are 96,352 blood glucose values included in this display.
+	      <br><br>Perhaps you are wondering why I just finished this in 2025 using data from 2019. I started the project in 2020, at the height of the Covid lockdowns. I retrieved these data from the MongoDB database, parsed it into individual days, and began to use svgwrite to build SVG files to feed to the laser cutter. Somewhere along the line, I ended up stuck and lost interest. Earlier this year (2025), I started thinking about the project again and decided to sit down for a few afternoons and get over the hurdle. Cutting out 365 days (from 16 individual sheets of cardstock) took about 3 hours of continuous laser cutting.
+      <br><br>It's interesting (at least to me) to look at the days and try and find patterns or to imagine the events that provided that day's shape ("Looks like I exercised a lot, blood sugar dropped, I probably overdid my carbs to bring it back up, and it bounced around like a roller coaster the rest of the day!"). Diabetes is a pain in the ass to live with, to be honest, but having access to these data in pseudo-realtime makes it easier, and I'm thankful for that.
       </p>
 <!--
   </div>
@@ -24,49 +27,49 @@
         <img class="sp-image" src="style/images/art/BGs_0.jpg" alt="" />
           <h4 class="sp-layer sp-overlay sp-padding" 
           data-position="leftBottom"  data-horizontal="40" data-vertical="40" 
-          data-show-transition="left" data-show-delay="300"> A plot of one day's bloodsugars. The BG value is the vertical axis, and the time is the horizontal axis, starting at midnight on the left side and moving through the day to the right. </h4>
+          data-show-transition="left" data-show-delay="300">A plot of one day's bloodsugars. The BG value is the vertical axis, and time is on the horizontal axis, midnight on the left moving through the day as you move to the right.</h4>
       </div>
       <div class="sp-slide"> 
         <img class="sp-image" src="style/images/art/BGs_2.jpg" alt="" />
           <h4 class="sp-layer sp-overlay sp-padding" 
           data-position="leftBottom"  data-horizontal="40" data-vertical="40" 
-          data-show-transition="left" data-show-delay="300"> January 1st is the card closest to the viewer, moving through the year as you go back. </h4>
+          data-show-transition="left" data-show-delay="300">January 1st is the card closest to the viewer, advancing day by day through the year as you go back.</h4>
       </div>
       <div class="sp-slide"> 
         <img class="sp-image" src="style/images/art/BGs_3.jpg" alt="" />
           <h4 class="sp-layer sp-overlay sp-padding" 
           data-position="leftBottom"  data-horizontal="40" data-vertical="40" 
-          data-show-transition="left" data-show-delay="300"> January 1 on the left hand side, December 31 on the right. </h4>
+          data-show-transition="left" data-show-delay="300">January 1 is on the left-hand side, December 31 on the right.</h4>
       </div>
       <div class="sp-slide"> 
           <img class="sp-image" src="style/images/art/BGs_4.jpg" alt="" />
           <h4 class="sp-layer sp-overlay sp-padding" 
           data-position="leftBottom"  data-horizontal="40" data-vertical="40" 
-          data-show-transition="left" data-show-delay="300"> Total of 96,352 data points are represented in this display. </h4>
+          data-show-transition="left" data-show-delay="300">A total of 96,352 data points are represented.</h4>
       </div>
       <div class="sp-slide"> 
           <img class="sp-image" src="style/images/art/BGs_5.jpg" alt="" />
           <h4 class="sp-layer sp-overlay sp-padding" 
           data-position="leftBottom"  data-horizontal="40" data-vertical="40" 
-          data-show-transition="left" data-show-delay="300"> Attempt to show how much noise there is in these data. </h4>
+          data-show-transition="left" data-show-delay="300">Attempt to show how much variance there is in these data.</h4>
       </div>
       <div class="sp-slide"> 
           <img class="sp-image" src="style/images/art/BGs_6.jpg" alt="" />
           <h4 class="sp-layer sp-overlay sp-padding" 
           data-position="leftBottom"  data-horizontal="40" data-vertical="40" 
-          data-show-transition="left" data-show-delay="300"> Second attempt. </h4>
+          data-show-transition="left" data-show-delay="300">Another attempt.</h4>
       </div>
       <div class="sp-slide"> 
           <img class="sp-image" src="style/images/art/BGs_7.jpg" alt="" />
           <h4 class="sp-layer sp-overlay sp-padding" 
           data-position="leftBottom"  data-horizontal="40" data-vertical="40" 
-          data-show-transition="left" data-show-delay="300"> Third attempt. </h4>
+          data-show-transition="left" data-show-delay="300">And a third. </h4>
       </div>
       <div class="sp-slide"> 
           <img class="sp-image" src="style/images/art/BGs_8.jpg" alt="" />
           <h4 class="sp-layer sp-overlay sp-padding" 
           data-position="leftBottom"  data-horizontal="40" data-vertical="40" 
-          data-show-transition="left" data-show-delay="300"> The messy underside, showing my hot glue hack to keep all of these cards from falling out of the stand! </h4>
+          data-show-transition="left" data-show-delay="300">The underside, showing my hot glue hack to keep all of these cards from falling out of the stand!</h4>
       </div>
     </div>
     <!-- /.sp-slides -->
